@@ -18,6 +18,17 @@ public:
 	graph(int n) {
 		data = vector<vector<pair<int, int>>>(n, vector<pair<int, int>>());
 	}
+
+
+	void addEdge(const city c1, const city c2, int dis)
+	{
+		cout << "ADD: " << c1 << "-" << c2 << "=" << dis << std::endl;
+
+		auto n1 = static_cast<int>(c1);
+		auto n2 = static_cast<int>(c2);
+		data[n1].push_back({ n2, dis });
+		data[n2].push_back({ n1, dis });
+	}
 };
 
 int main() {
