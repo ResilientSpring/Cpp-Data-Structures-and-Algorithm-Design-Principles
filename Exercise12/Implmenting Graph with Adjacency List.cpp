@@ -3,7 +3,7 @@
 #include <algorithm>
 using namespace std;
 
-ostream &operator<<(ostream &os, const city c);
+ostream& operator<<(ostream &os, const city c);
 
 enum class city : int {
 	MOSCOW, LONDON, ISTANBUL, SEATTLE, DUBAI, MUMBAI, SINGAPORE
@@ -24,7 +24,7 @@ int main() {
 
 }
 
-ostream &operator<<(ostream &os, const city c)
+ostream& operator<<(ostream &os, const city c)
 {
 	switch (c)
 	{
