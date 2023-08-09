@@ -48,7 +48,26 @@ You'd end up with a case of infinite recursion.
 
 
 What you probably want to do in this case is to have a pointer to another struct bar, 
-which may or may not be null. And in fact, at least one of your cells will have no parent; 
+which may or may not be null. 
+
+struct bar {
+  int a;
+  int b;
+  struct bar *another;    // "bar *another;" would be OK in C++, not in C
+};
+
+
+Going back to your cell, you'd have:
+
+class Cell {
+public:
+  int row;
+  int col;
+  Cell * parent;
+};
+
+
+And in fact, at least one of your cells will have no parent; 
 something will probably be the root and ancestor of all your cells. 
 That one cell will have nullptr as the value of parent.[2]
 
