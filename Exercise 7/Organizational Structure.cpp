@@ -20,7 +20,7 @@ struct orgnization_tree {
 	static orgnization_tree create_organization_structure(const string &pos) {
 
 		orgnization_tree tree;
-		tree.root = new node(pos, NULL, NULL);
+		tree.root = new node{ pos, NULL, NULL };
 		return tree;
 
 	}
