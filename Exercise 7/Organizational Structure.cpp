@@ -16,7 +16,7 @@ struct orgnization_tree {
 
 	node *root;
 
-	// Add a function to create the root.
+	// Add a function to create the root.  This is a static function just to create the tree.
 	static orgnization_tree create_organization_structure(const string &pos) {
 
 		orgnization_tree tree;
