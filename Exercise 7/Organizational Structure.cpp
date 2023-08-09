@@ -29,6 +29,9 @@ struct orgnization_tree {
 	// function easier.
 	static node *find(node *root, const string &value) {
 
+		if (root == NULL)
+			return NULL;
+
 	}
 
 
