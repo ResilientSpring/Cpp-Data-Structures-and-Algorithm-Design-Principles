@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="const string.cpp">
+    <ClCompile Include="Clamp down.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -25,6 +25,16 @@ struct orgnization_tree {
 
 	}
 
+	// Return a pointer of node type.
+	static node *find(node *root, string value) {
+
+		if (root == NULL)
+			return NULL;
+		if (root->position == value)
+			return root;
+
+		auto firstFound = orgnization_tree::find(root->first, value);
+	}
 
 };
 

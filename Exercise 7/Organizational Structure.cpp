@@ -25,6 +25,15 @@ struct orgnization_tree {
 
 	}
 
+	// Write another function that will help us find a particular node based on a value to make our insertion 
+	// function easier.
+	static node *find(node *root, const string &value) {
+
+		if (root == NULL)
+			return NULL;
+
+	}
+
 
 };
 
