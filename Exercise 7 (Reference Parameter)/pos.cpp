@@ -25,6 +25,14 @@ struct orgnization_tree {
 
 	}
 
+	static node *find(node *root, string value) {
+
+		if (root == NULL)
+			return NULL;
+		if (root->position == value)
+			return root;
+
+	}
 
 };
 
