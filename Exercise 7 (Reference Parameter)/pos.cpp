@@ -33,6 +33,7 @@ struct orgnization_tree {
 		if (root->position == value)
 			return root;
 
+		auto firstFound = orgnization_tree::find(root->first, value);
 	}
 
 };
