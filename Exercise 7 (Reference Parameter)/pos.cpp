@@ -25,6 +25,7 @@ struct orgnization_tree {
 
 	}
 
+	// Return a pointer of node type.
 	static node *find(node *root, string value) {
 
 		if (root == NULL)
