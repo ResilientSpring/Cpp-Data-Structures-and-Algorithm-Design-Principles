@@ -38,6 +38,8 @@ struct orgnization_tree {
 
 		if (firstFound != NULL)
 			return firstFound;
+
+		return orgnization_tree::find(root->second, value);
 	}
 
 
