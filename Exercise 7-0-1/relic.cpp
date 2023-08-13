@@ -34,6 +34,11 @@ struct orgnization_tree {
 			return root;
 
 		auto firstFound = find(root->first, value);
+
+		if (firstFound != NULL)
+			return firstFound;
+
+		return find(root->second, value);
 	}
 
 };
