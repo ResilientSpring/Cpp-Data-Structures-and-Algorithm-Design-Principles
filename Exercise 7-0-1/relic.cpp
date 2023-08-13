@@ -41,6 +41,17 @@ struct orgnization_tree {
 		return find(root->second, value);
 	}
 
+	// Add a subrdinate of an employee.
+	bool addSubordinate(string manager, string subordinate) {
+
+		auto managerNode = find(root, manager);
+
+		if (!managerNode) {
+			cout << "No position named " << manager << endl;
+			return false;
+		}
+	}
+
 };
 
 
