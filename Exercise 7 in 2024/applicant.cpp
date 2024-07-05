@@ -40,12 +40,13 @@ struct tree {
 		if (strcmp(root->position, value) == 0)
 			return root;
 
-		// , or it will be in iether of the right or left subtrees.
+		// , or it will be in ether of the right
 		auto firstFound = tree::find(root->first, value);
 
 		if (firstFound != NULL)
 			return firstFound;
 
+		//  or left subtrees
 		return tree::find(root->second, value);
 	}
 
