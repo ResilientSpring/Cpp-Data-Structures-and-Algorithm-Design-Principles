@@ -59,6 +59,18 @@ struct tree {
 
 		node* node = find(root, name_of_existing_node);
 
+		if (node == NULL) {
+			printf("No position named %s .\n", name_of_existing_node);
+
+			return false;
+		}
+
+		if (node->first && node->second) {
+			printf("%s already has two sub-nodes.\n", name_of_existing_node);
+
+			return false;
+		}
+
 	}
 
 
@@ -87,6 +99,8 @@ struct tree {
 
 		if (!managerNode->first)
 			managerNode->first = new node{ subordinate, NULL, NULL };
+		else
+			managerNode->second = new node{ subordinate, NULL, NULL };
 	}
 };
 
