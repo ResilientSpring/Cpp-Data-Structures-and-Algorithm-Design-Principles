@@ -22,6 +22,7 @@ struct tree {
 
 		tree tree;
 		tree.root = new node{ position, NULL, NULL };
+
 		return tree;
 
 	}
@@ -35,12 +36,12 @@ struct tree {
 		if (root->position == value)
 			return root;
 
-		auto firstFound = orgnization_tree::find(root->first, value);
+		auto firstFound = tree::find(root->first, value);
 
 		if (firstFound != NULL)
 			return firstFound;
 
-		return orgnization_tree::find(root->second, value);
+		return tree::find(root->second, value);
 	}
 
 
