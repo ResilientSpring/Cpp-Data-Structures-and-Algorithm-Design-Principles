@@ -32,6 +32,8 @@ struct tree {
 		if (root == NULL)
 			return NULL;
 		
+		/* While traversing the tree in search of an element, either the element will be the node
+		  we are at,  */
 		if (root->position == value)
 			return root;
 
