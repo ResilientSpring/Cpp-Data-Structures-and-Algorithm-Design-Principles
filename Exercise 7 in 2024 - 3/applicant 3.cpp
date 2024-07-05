@@ -71,6 +71,9 @@ struct tree {
 			return false;
 		}
 
+		if (node->first == NULL)
+			node->first = new node{ name_of_existing_node, NULL, NULL };
+
 	}
 
 
