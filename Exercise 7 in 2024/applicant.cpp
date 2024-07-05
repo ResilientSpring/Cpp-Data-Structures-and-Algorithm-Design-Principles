@@ -56,7 +56,7 @@ struct tree {
 
 
 	// Add a subrdinate of an employee.
-	bool addSubordinate(const char* manager, string subordinate) {
+	bool addSubordinate(const char* manager, const char* subordinate) {
 
 		/*
 		
@@ -65,16 +65,6 @@ struct tree {
 		And the name of the new employee to be added as a subordinate.
 		
 		*/
-
-		auto managerNode = find(root, manager);
-
-		if (!managerNode) {
-			cout << "No position named " << manager << endl;
-			return false;
-		}
-	}
-
-	bool addSubordinate(const string& manager, const string& subordinate) {
 
 		auto managerNode = find(root, manager);
 
