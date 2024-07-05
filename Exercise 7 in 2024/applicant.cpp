@@ -50,6 +50,29 @@ struct tree {
 		return tree::find(root->second, value);
 	}
 
+	bool insertion(const char* name_of_existing_node, const char* name_of_new_node) {
+
+	}
+
+
+	// Add a subrdinate of an employee.
+	bool addSubordinate(const char* manager, string subordinate) {
+
+		/*
+		
+		The function takes two parameters - the name of the already existing employee in the tree
+		
+		And the name of the new employee to be added as a subordinate.
+		
+		*/
+
+		auto managerNode = find(root, manager);
+
+		if (!managerNode) {
+			cout << "No position named " << manager << endl;
+			return false;
+		}
+	}
 };
 
 
