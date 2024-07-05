@@ -95,7 +95,8 @@ int main() {
 
 	tree tree = tree::create_a_root_node("CEO");
 
-	if(tree.c)
+	if (tree.insertion("CEO", "Deputy Director"))
+		printf("Added Deputy Director in the tree.\n");
 
 }
 
