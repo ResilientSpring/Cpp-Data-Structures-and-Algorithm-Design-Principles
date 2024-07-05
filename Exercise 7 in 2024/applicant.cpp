@@ -5,7 +5,7 @@ using namespace std;
 
 struct node {
 
-	string position;
+	char position[50];
 
 	node* first;
 	node* second;
@@ -18,7 +18,7 @@ struct tree {
 	node* root;
 
 	// Add a function to create the root.  This is a static function just to create the tree.
-	static tree create_organization_structure(const string &position) {
+	static tree create_organization_structure(const char position) {
 
 		tree tree;
 		tree.root = new node{ position, NULL, NULL };
@@ -27,9 +27,9 @@ struct tree {
 
 	}
 
-	// Write another function that will help us find a particular node based on a value to make our insertion 
+	// Write another function that will help us find a particular node based on a value in order to make our insertion 
 	// function easier.
-	static node* find(node* root, const string &value) {
+	static node* find(node* root, const char value) {
 
 		if (root == NULL)
 			return NULL;
