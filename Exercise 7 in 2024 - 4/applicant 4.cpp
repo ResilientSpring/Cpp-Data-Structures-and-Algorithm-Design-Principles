@@ -72,7 +72,7 @@ struct tree {
 		}
 
 		if (node->first == NULL)
-			node->first = new node{ name_of_new_node, NULL, NULL };
+			node->first = new Node{ name_of_new_node, NULL, NULL };
 
 	}
 
