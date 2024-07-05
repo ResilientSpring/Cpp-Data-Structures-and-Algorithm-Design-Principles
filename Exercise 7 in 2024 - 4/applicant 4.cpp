@@ -2,32 +2,32 @@
 #include <queue>
 using namespace std;
 
-struct node {
+struct Node {
 
 	const char* position;
 
-	node* first;
-	node* second;
+	Node* first;
+	Node* second;
 
 };
 
 
 struct tree {
 
-	node* root;
+	Node* root;
 
 	// Add a function to create the root.  This is a static function just to create the tree.
 	static tree create_a_root_node(const char* position) {
 
 		tree tree;
-		tree.root = new node{ position, NULL, NULL };
+		tree.root = new Node{ position, NULL, NULL };
 
 		return tree;
 
 	}
 
 	// Find a node based on a value.
-	static node* find(node* root, const char* value) {
+	static Node* find(Node* root, const char* value) {
 
 		if (root == NULL)
 			return NULL;
@@ -57,7 +57,7 @@ struct tree {
 		  Insert a node under a node.  In other words, add a sub-node to a node.
 		*/
 
-		node* node = find(root, name_of_existing_node);
+		Node* node = find(root, name_of_existing_node);
 
 		if (node == NULL) {
 			printf("No position named %s .\n", name_of_existing_node);
@@ -88,7 +88,7 @@ struct tree {
 
 		*/
 
-		node* managerNode = find(root, manager);
+		Node* managerNode = find(root, manager);
 
 		if (!managerNode) {
 			cout << "No position named " << manager << endl;
@@ -101,9 +101,9 @@ struct tree {
 		}
 
 		if (!managerNode->first)
-			managerNode->first = new node{ subordinate, NULL, NULL };
+			managerNode->first = new Node{ subordinate, NULL, NULL };
 		else
-			managerNode->second = new node{ subordinate, NULL, NULL };
+			managerNode->second = new Node{ subordinate, NULL, NULL };
 
 		return true;
 	}
