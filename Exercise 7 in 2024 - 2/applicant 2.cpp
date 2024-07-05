@@ -4,8 +4,8 @@ using namespace std;
 
 struct node {
 
-	// const char position[50];
-	const char* position;
+	const char position[50];
+	// const char* position;
 
 	node* first;
 	node* second;
@@ -32,7 +32,7 @@ struct tree {
 
 		if (root == NULL)
 			return NULL;
-		
+
 		/* While traversing the tree in search of an element, either the element will be the node
 		  we are at,  */
 		if (root->position == value)
@@ -60,11 +60,11 @@ struct tree {
 	bool addSubordinate(const char* manager, const char* subordinate) {
 
 		/*
-		
+
 		The function takes two parameters - the name of the already existing employee in the tree
-		
+
 		And the name of the new employee to be added as a subordinate.
-		
+
 		*/
 
 		auto managerNode = find(root, manager);
