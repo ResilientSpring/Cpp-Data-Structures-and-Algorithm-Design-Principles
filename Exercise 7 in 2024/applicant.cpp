@@ -4,7 +4,7 @@ using namespace std;
 
 struct node {
 
-	char position[50];
+	const char position[50];
 
 	node* first;
 	node* second;
@@ -27,7 +27,7 @@ struct tree {
 	}
 
 	// Find a node based on a value.
-	static node* find(node* root, const char value) {
+	static node* find(node* root, const char* value) {
 
 		if (root == NULL)
 			return NULL;
@@ -35,7 +35,8 @@ struct tree {
 		if (root->position == value)
 			return root;
 
-		if(strcmp(root.position, value) == 0)
+		if (strcmp(root->position, value) == 0)
+			return root;
 
 		auto firstFound = tree::find(root->first, value);
 
