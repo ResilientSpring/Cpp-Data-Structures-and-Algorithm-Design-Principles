@@ -40,7 +40,7 @@ struct tree {
 		if (strcmp(root->position, value) == 0)
 			return root;
 
-		// , or it will be in ether of the right
+		// , or it will be in ether of the right subtree
 		auto firstFound = tree::find(root->first, value);
 
 		if (firstFound != NULL)
