@@ -145,6 +145,10 @@ struct Tree {
 
 		printf("%s, ", start->position);
 	}
+
+	static void Level_order_traversal(Node* start) {
+
+	}
 };
 
 
