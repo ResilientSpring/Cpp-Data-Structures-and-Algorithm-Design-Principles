@@ -108,7 +108,12 @@ int main() {
 	if (tree.insertion("Deputy Director", "Marketing Head"))
 		printf("Added Marketing Head in the tree.\n");
 	else
-		prinft("Couldn't add Marketing Head in the tree.\n");
+		printf("Couldn't add Marketing Head in the tree.\n");
+
+	if (tree.insertion("IT Head", "Security Head"))
+		printf("Added Security Head in the tree.\n");
+	else
+		printf("Couldn't add Security Head in the tree.\n");
 
 }
 
