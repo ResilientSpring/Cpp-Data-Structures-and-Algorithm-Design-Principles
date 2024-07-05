@@ -27,8 +27,7 @@ struct tree {
 
 	}
 
-	// Write another function that will help us find a particular node based on a value in order to make our insertion 
-	// function easier.
+	// Find a node based on a value.
 	static node* find(node* root, const char value) {
 
 		if (root == NULL)
