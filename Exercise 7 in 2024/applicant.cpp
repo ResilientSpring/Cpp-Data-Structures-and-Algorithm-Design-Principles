@@ -35,7 +35,7 @@ struct tree {
 		if (root->position == value)
 			return root;
 
-	//	if(strcmp(root.position, value))
+		if(strcmp(root.position, value) == 0)
 
 		auto firstFound = tree::find(root->first, value);
 
