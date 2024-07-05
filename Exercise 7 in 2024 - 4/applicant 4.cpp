@@ -134,6 +134,17 @@ struct Tree {
 		InOrder_traversal(start->second);
 
 	}
+
+	static void Postorder_traversal(Node* start) {
+		
+		if (start == NULL)
+			return;
+
+		Postorder_traversal(start->first);
+		Postorder_traversal(start->second);
+
+		printf("%s, ", start->position);
+	}
 };
 
 
