@@ -50,7 +50,6 @@ struct tree {
 		return tree::find(root->second, value);
 	}
 
-
 };
 
 
