@@ -32,8 +32,11 @@ struct tree {
 
 		if (root == NULL)
 			return NULL;
+		
 		if (root->position == value)
 			return root;
+
+	//	if(strcmp(root.position, value))
 
 		auto firstFound = tree::find(root->first, value);
 
@@ -50,3 +53,8 @@ struct tree {
 int main() {
 
 }
+
+// References:
+// 
+// 1. https://stackoverflow.com/questions/8840026/compare-two-equal-array-in-c-but-output-shows-unequal
+// 
