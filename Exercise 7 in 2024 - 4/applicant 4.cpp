@@ -73,6 +73,8 @@ struct tree {
 
 		if (node->first == NULL)
 			node->first = new Node{ name_of_new_node, NULL, NULL };
+		else 
+			node->second = new Node{ name_of_new_node, NULL, NULL };
 
 	}
 
