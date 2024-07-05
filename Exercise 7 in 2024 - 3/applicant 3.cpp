@@ -101,6 +101,8 @@ struct tree {
 			managerNode->first = new node{ subordinate, NULL, NULL };
 		else
 			managerNode->second = new node{ subordinate, NULL, NULL };
+
+		return true;
 	}
 };
 
