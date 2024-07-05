@@ -12,14 +12,14 @@ struct Node {
 };
 
 
-struct tree {
+struct Tree {
 
 	Node* root;
 
 	// Add a function to create the root.  This is a static function just to create the tree.
-	static tree create_a_root_node(const char* position) {
+	static Tree create_a_root_node(const char* position) {
 
-		tree tree;
+		Tree tree;
 		tree.root = new Node{ position, NULL, NULL };
 
 		return tree;
@@ -41,13 +41,13 @@ struct tree {
 			return root;
 
 		// , or it will be in ether of the right subtree
-		auto firstFound = tree::find(root->first, value);
+		auto firstFound = Tree::find(root->first, value);
 
 		if (firstFound != NULL)
 			return firstFound;
 
 		//  or left subtrees
-		return tree::find(root->second, value);
+		return Tree::find(root->second, value);
 	}
 
 	// The func's return type is bool, indicating whether we can insert the node successfully or not.
@@ -115,7 +115,7 @@ struct tree {
 
 int main() {
 
-	tree tree = tree::create_a_root_node("CEO");
+	Tree tree = Tree::create_a_root_node("CEO");
 
 	if (tree.insertion("CEO", "Deputy Director"))
 		printf("Added Deputy Director in the tree.\n");
