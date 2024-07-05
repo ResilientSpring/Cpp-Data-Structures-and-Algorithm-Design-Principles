@@ -121,6 +121,19 @@ struct Tree {
 		Preorder_traversal(start->second);
 
 	}
+
+	static void InOrder_traversal(Node* start) {
+
+		if (!start)
+			return;
+
+		InOrder_traversal(start->first);
+
+		printf("%s, ", start->position);
+
+		InOrder_traversal(start->second);
+
+	}
 };
 
 
