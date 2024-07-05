@@ -4,7 +4,8 @@ using namespace std;
 
 struct node {
 
-	const char position[50];
+	// const char position[50];
+	const char* position;
 
 	node* first;
 	node* second;
@@ -72,6 +73,14 @@ struct tree {
 			cout << "No position named " << manager << endl;
 			return false;
 		}
+
+		if (managerNode->first && managerNode->second) {
+			cout << manager << " already has 2 subordinates." << endl;
+			return false;
+		}
+
+		if (!managerNode->first)
+			managerNode->first = new node{ subordinate, NULL, NULL };
 	}
 };
 
