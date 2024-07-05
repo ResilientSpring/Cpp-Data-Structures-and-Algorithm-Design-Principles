@@ -93,7 +93,9 @@ struct tree {
 
 int main() {
 
-	node*  
+	tree tree = tree::create_a_root_node("CEO");
+
+	if(tree.c)
 
 }
 
