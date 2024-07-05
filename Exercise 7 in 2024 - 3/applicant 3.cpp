@@ -50,6 +50,7 @@ struct tree {
 		return tree::find(root->second, value);
 	}
 
+	// The func's return type is bool, indicating whether we can insert the node successfully or not.
 	bool insertion(const char* name_of_existing_node, const char* name_of_new_node) {
 
 	}
