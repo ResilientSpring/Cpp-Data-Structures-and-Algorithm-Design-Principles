@@ -117,6 +117,9 @@ struct Tree {
 			return;
 		printf("%s, ", start->position);
 
+		Preorder_traversal(start->first);
+		Preorder_traversal(start->second);
+
 	}
 };
 
