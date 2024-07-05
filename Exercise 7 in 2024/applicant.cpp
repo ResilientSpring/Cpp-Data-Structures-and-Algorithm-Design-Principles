@@ -73,6 +73,16 @@ struct tree {
 			return false;
 		}
 	}
+
+	bool addSubordinate(const string& manager, const string& subordinate) {
+
+		auto managerNode = find(root, manager);
+
+		if (!managerNode) {
+			cout << "No position named " << manager << endl;
+			return false;
+		}
+	}
 };
 
 
