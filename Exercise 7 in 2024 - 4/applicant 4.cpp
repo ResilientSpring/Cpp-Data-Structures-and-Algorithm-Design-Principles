@@ -110,6 +110,45 @@ struct Tree {
 
 		return true;
 	}
+
+	static void Preorder_traversal(Node* start) {
+
+		if (!start)
+			return;
+		printf("%s, ", start->position);
+
+		Preorder_traversal(start->first);
+		Preorder_traversal(start->second);
+
+	}
+
+	static void InOrder_traversal(Node* start) {
+
+		if (!start)
+			return;
+
+		InOrder_traversal(start->first);
+
+		printf("%s, ", start->position);
+
+		InOrder_traversal(start->second);
+
+	}
+
+	static void Postorder_traversal(Node* start) {
+		
+		if (start == NULL)
+			return;
+
+		Postorder_traversal(start->first);
+		Postorder_traversal(start->second);
+
+		printf("%s, ", start->position);
+	}
+
+	static void Level_order_traversal(Node* start) {
+
+	}
 };
 
 
