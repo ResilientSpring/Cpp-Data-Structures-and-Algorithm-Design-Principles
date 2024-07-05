@@ -17,7 +17,7 @@ struct tree {
 	node* root;
 
 	// Add a function to create the root.  This is a static function just to create the tree.
-	static tree create_organization_structure(const char* position) {
+	static tree create_a_root_node(const char* position) {
 
 		tree tree;
 		tree.root = new node{ position, NULL, NULL };
@@ -57,7 +57,7 @@ struct tree {
 		  Insert a node under a node.  In other words, add a sub-node to a node.
 		*/
 
-		auto node = find(root, name_of_existing_node);
+		node* node = find(root, name_of_existing_node);
 
 	}
 
@@ -73,7 +73,7 @@ struct tree {
 
 		*/
 
-		auto managerNode = find(root, manager);
+		node* managerNode = find(root, manager);
 
 		if (!managerNode) {
 			cout << "No position named " << manager << endl;
@@ -92,6 +92,8 @@ struct tree {
 
 
 int main() {
+
+	node*  
 
 }
 
