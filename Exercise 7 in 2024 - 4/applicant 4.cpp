@@ -110,6 +110,14 @@ struct Tree {
 
 		return true;
 	}
+
+	static void Preorder_traversal(Node* start) {
+
+		if (!start)
+			return;
+		printf("%s, ", start->position);
+
+	}
 };
 
 
