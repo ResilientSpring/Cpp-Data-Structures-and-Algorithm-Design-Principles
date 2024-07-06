@@ -148,6 +148,36 @@ struct Tree {
 
 	static void Level_order_traversal(Node* start) {
 
+		if (start == NULL)
+			return;
+
+		queue<Node*> q;
+
+		q.push(start);
+
+		while (!q.empty()) {
+
+			int size = q.size();
+
+			for (int i = 0; i < size; i++) {
+
+				auto current_node = q.front();
+
+				q.pop();
+
+				printf("%s, ", current_node->position);
+
+				if (current_node->first)
+					q.push(current_node->first);
+
+				if (current_node->second)
+					q.push(current_node->second);
+
+			}
+
+			printf("\n");
+
+		}
 	}
 };
 
