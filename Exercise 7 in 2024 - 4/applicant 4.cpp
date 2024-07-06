@@ -147,7 +147,24 @@ struct Tree {
 	}
 
 	static void Level_order_traversal(Node* start) {
+		if (start == NULL)
+			return;
 
+		queue<Node*> q;
+
+		q.push(start);
+
+		while (q.empty() == NULL) {
+
+			int size = q.size();
+
+			for (int i = 0; i < size; i++) {
+
+				auto current = q.front();
+
+			}
+
+		}
 	}
 };
 
