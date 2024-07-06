@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{0f79f8b8-8eac-41b3-99f5-9268e96f30c5}</ProjectGuid>
-    <RootNamespace>Exercise7Noconststring</RootNamespace>
+    <ProjectGuid>{64e93530-a13e-428a-8f2a-73f501d80c74}</ProjectGuid>
+    <RootNamespace>Exercise701</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Clamp down.cpp" />
+    <ClCompile Include="relic.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

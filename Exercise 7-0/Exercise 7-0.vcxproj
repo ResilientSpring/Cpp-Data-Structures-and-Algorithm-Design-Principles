@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{0f79f8b8-8eac-41b3-99f5-9268e96f30c5}</ProjectGuid>
-    <RootNamespace>Exercise7Noconststring</RootNamespace>
+    <ProjectGuid>{b411ca83-fade-4905-8842-aa692bc26776}</ProjectGuid>
+    <RootNamespace>Exercise70</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Clamp down.cpp" />
+    <ClCompile Include="Vestige.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
