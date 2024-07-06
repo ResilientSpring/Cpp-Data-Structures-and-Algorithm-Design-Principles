@@ -175,6 +175,8 @@ struct Tree {
 
 			}
 
+			printf("\n");
+
 		}
 	}
 };
