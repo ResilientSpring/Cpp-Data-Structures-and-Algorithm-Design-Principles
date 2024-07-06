@@ -161,9 +161,11 @@ struct Tree {
 
 			for (int i = 0; i < size; i++) {
 
-				auto current = q.front();
+				auto current_node = q.front();
 
 				q.pop();
+
+				printf("%s, ", current_node->position);
 
 			}
 
