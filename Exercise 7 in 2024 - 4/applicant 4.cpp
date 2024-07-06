@@ -162,6 +162,8 @@ struct Tree {
 
 				auto current = q.front();
 
+				q.pop();
+
 			}
 
 		}
