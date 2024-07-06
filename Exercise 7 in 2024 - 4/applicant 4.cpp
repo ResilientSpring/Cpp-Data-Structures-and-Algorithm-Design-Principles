@@ -147,6 +147,7 @@ struct Tree {
 	}
 
 	static void Level_order_traversal(Node* start) {
+
 		if (start == NULL)
 			return;
 
