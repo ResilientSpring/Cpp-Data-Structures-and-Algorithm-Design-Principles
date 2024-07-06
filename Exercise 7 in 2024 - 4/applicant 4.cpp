@@ -155,7 +155,7 @@ struct Tree {
 
 		q.push(start);
 
-		while (q.empty() == NULL) {
+		while (!q.empty()) {
 
 			int size = q.size();
 
