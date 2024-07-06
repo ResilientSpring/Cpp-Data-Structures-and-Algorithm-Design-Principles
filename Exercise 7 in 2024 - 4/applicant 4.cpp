@@ -167,6 +167,12 @@ struct Tree {
 
 				printf("%s, ", current_node->position);
 
+				if (current_node->first)
+					q.push(current_node->first);
+
+				if (current_node->second)
+					q.push(current_node->second);
+
 			}
 
 		}
